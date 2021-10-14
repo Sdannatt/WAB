@@ -13,14 +13,47 @@ public class Wab {
 	private Integer id;
 
 	private String name;
+	private Integer pointsValue;
 
-	private String colour;
-
-	public Wab(Integer id, String name, String colour) {
+	public Wab(Integer id, String name, Integer pointsValue) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.colour = colour;
+		this.pointsValue = pointsValue;
+	}
+
+	public Wab(String name, Integer pointsValue) {
+		super();
+		this.name = name;
+		this.pointsValue = pointsValue;
+	}
+
+	public Wab() {
+
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getPointsValue() {
+		return pointsValue;
+	}
+
+	public void setPointsValue(Integer pointsValue) {
+		this.pointsValue = pointsValue;
 	}
 
 }
