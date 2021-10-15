@@ -12,4 +12,5 @@ public interface WabRepo extends JpaRepository<Wab, Integer> {
 
 	public List<Wab> findByName(String name);
 
+	public List<Wab> findByNameOrPointsValue(String name, Integer pointsValue);
 }
